@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/o_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/o"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tpp_tv" />
+
+    <TextView
+        android:id="@+id/taa_tv"
+        android:layout_width="137dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="5dp"
+        android:background="#C0C0C0"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ta_tv"
+        app:layout_constraintEnd_toEndOf="@+id/btt_et"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toEndOf="@+id/ta_tv" />
+
+    <TextView
+        android:id="@+id/twt_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/twt"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ta_tv" />
+
+    <TextView
+        android:id="@+id/btt_tv"
+        android:layout_width="206dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/btt"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/btt_et"
+        android:layout_width="173dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="#5CC358"
+        android:backgroundTint="#98FB98"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btt_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btt_tv" />
+
+    <TextView
+        android:id="@+id/tp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/tp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btt_tv" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tp_tv">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/rd1"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/rd2"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/rd3"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/rd4"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ta_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/ta"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/twta_tv"
+        android:layout_width="139dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="#C0C0C0"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/twt_tv"
+        app:layout_constraintEnd_toEndOf="@+id/taa_tv"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/taa_tv" />
+
+    <TextView
+        android:id="@+id/nop_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/nop"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twt_tv" />
+
+    <EditText
+        android:id="@+id/nop_et"
+        android:layout_width="83dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+
+        android:background="#98FB98"
+        android:backgroundTint="#98FB98"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nop_tv"
+        app:layout_constraintStart_toEndOf="@+id/nop_tv" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="37dp"
+        android:onClick="onGoButtonClicked"
+        android:text="go"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nop_et"
+        app:layout_constraintEnd_toEndOf="@+id/twta_tv"
+        app:layout_constraintStart_toEndOf="@+id/nop_et"
+        app:layout_constraintTop_toBottomOf="@+id/twta_tv" />
+
+    <TextView
+        android:id="@+id/tpp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/tpp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nop_tv" />
+
+    <TextView
+        android:id="@+id/tppa_tv"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:background="#C0C0C0"
+        android:backgroundTint="#C0C0C0"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tpp_tv"
+        app:layout_constraintEnd_toEndOf="@+id/go"
+        app:layout_constraintStart_toEndOf="@+id/tpp_tv" />
+
+    <TextView
+        android:id="@+id/oa_tv"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="#C0C0C0"
+        android:backgroundTint="#C0C0C0"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/o_tv"
+        app:layout_constraintEnd_toEndOf="@+id/tppa_tv"
+        app:layout_constraintStart_toStartOf="@+id/tppa_tv" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="onClearButtonClicked"
+        android:text="clear"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/oa_tv"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toEndOf="@+id/o_tv"
+        app:layout_constraintTop_toBottomOf="@+id/oa_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android_Notes</string>
+    <string name="android_notes">Multi Notes</string>
+    <string name="Vikas_Pathak_2022">© 2022, Vikas Pathak</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="info_icon">INFO ICON</string>
+    <string name="notes_plus">NOTES PLUS</string>
+    <string name="save_icon">SAVE ICON</string>
+    <string name="file_name">ANDROID_NOTES</string>
+</resources>

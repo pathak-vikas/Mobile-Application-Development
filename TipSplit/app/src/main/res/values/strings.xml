@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TipSplit</string>
+    <string name="btt">Bill Total with Tax:</string>
+    <string name="tp">Tip Percent:</string>
+    <string name="ta">Tip Amount:</string>
+    <string name="twt">Total with Tip:</string>
+    <string name="nop">Number of People:</string>
+    <string name="tpp">Total per Person:</string>
+    <string name="o">Overage:</string>
+    <string name="rd1">12%</string>
+    <string name="rd2">15%</string>
+    <string name="rd3">18%</string>
+    <string name="rd4">20%</string>
+</resources>
