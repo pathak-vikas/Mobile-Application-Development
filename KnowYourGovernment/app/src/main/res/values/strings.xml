@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Know Your Government</string>
+    <string name="search_id">searchID</string>
+    <string name="address_str">Address :</string>
+    <string name="phone_str">Contact :</string>
+    <string name="email_str">Email-Id :</string>
+    <string name="Website_str">Website :</string>
+    <string name="SerializeGovernmentObject">SerGovObj</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_official">Official</string>
+    <string name="title_activity_photo">Detail Photo</string>
+    <string name="version">Version 1.0</string>
+    <string name="developerName">Karthik Mahesh</string>
+
+</resources>

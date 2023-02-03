@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/officeLoc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/officeConstraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/officeLoc"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/officeInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/officeImage"
+            android:layout_width="151dp"
+            android:layout_height="144dp"
+            android:layout_marginRight="24dp"
+            android:scaleType="center"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officeInfo" />
+
+        <TextView
+            android:id="@+id/officeAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/address_str"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/officeActAddress"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/officeContact"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/phone_str"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/officePhneNumber"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/officeEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/email_str"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/officeActEmail"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/officeWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/Website_str"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/officeActWebsite"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/officeActAddress"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            app:layout_constraintHorizontal_bias="0.132"
+            app:layout_constraintLeft_toRightOf="@+id/officeAddress"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/officePhneNumber"
+            android:layout_width="230dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@+id/officeContact"
+            app:layout_constraintTop_toBottomOf="@+id/officeActAddress" />
+
+        <TextView
+            android:id="@+id/officeActEmail"
+            android:layout_width="228dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@+id/officeEmail"
+            app:layout_constraintTop_toBottomOf="@+id/officePhneNumber" />
+
+        <TextView
+            android:id="@+id/officeActWebsite"
+            android:layout_width="233dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/officeWebsite"
+            app:layout_constraintTop_toBottomOf="@+id/officeActEmail" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officeActWebsite"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:id="@+id/off_google"
+                android:layout_width="27dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/googleplus" />
+
+            <ImageView
+                android:id="@+id/off_facebook"
+                android:layout_width="27dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/facebook" />
+
+            <ImageView
+                android:id="@+id/off_twitter"
+                android:layout_width="27dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/twitter" />
+
+            <ImageView
+                android:id="@+id/off_youtube"
+                android:layout_width="27dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/youtube" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
